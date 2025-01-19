@@ -1,17 +1,21 @@
 .poppins-thin {
     font-family: "Poppins", serif;
     font-style: normal;
-  }
-*{
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     max-width: 1440px;
 }
-  /* header-part */
 
+/* header-part */
+.hide {
+    display: none;
+}
 
 header {
     padding: 85px 120px 100px 120px;
@@ -24,15 +28,18 @@ header {
     padding-bottom: 100px;
 
 }
-.nav-bar-text{
+
+.nav-bar-text {
     font-weight: 600;
 }
-.nav-bar-text>nav>ul{
+
+.nav-bar-text>nav>ul {
     display: flex;
     gap: 34px;
     text-decoration: none;
 }
-.nav-bar-text>nav>ul>li{
+
+.nav-bar-text>nav>ul>li {
     display: inline;
 }
 
@@ -40,39 +47,42 @@ header {
     text-decoration: none;
     color: black;
 }
-#shopping{
+
+#shopping {
     height: 35px;
     width: 35px;
 }
-.logo-name{
+
+.logo-name {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 /* header-banner-part */
 
-.banner{
+.banner {
     display: flex;
     gap: 130px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
-.banner-text{
+.banner-text {
     max-width: 580px;
 }
 
-.banner-text-1{
+.banner-text-1 {
     font-size: 3.25rem;
     font-weight: 700;
 }
 
-.banner-text-2{
+.banner-text-2 {
     font-weight: 600px;
     margin: 16px 0 16px;
 }
 
-.banner-btn{
+.banner-btn {
     font-weight: bold;
     background-color: rgba(224, 44, 109, 1);
     padding: 10px 24px;
@@ -81,80 +91,87 @@ header {
     border-radius: 41px;
 }
 
-.banner-img{
+.banner-img {
     background-image: url('images/Circle design.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center;  */
+    background-size: cover;
 }
+
 /* header-logos */
 
-.logos{
+.logos {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 31px 62px;
     gap: 61px;
-    box-shadow: 1px -12px 7px -18px , 1px 12px 7px -18px;
+    box-shadow: 1px -12px 7px -18px, 1px 12px 7px -18px;
 
 }
+
+
 
 /* end of header part */
 
-.main-banner-name{
+.main-banner-name {
     text-align: center;
 }
 
-.main-head{
+.main-head {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-   padding: 0 195px;
+    padding: 0 195px;
 }
-.main-head-text{
+
+.main-head-text {
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.main-img{
+.main-img {
     padding: 17px 15px;
-   box-shadow: 0px 0px 50px rgb(174, 173, 173);
-   border-radius: 5px;
-   border: none;
+    box-shadow: 0px 0px 30px rgb(174, 173, 173);
+    border-radius: 5px;
+    border: none;
 }
 
-.main-img>img{
+.main-img>img {
     width: 300px;
     height: 256px;
     margin: 0;
     padding: 0;
 }
-.img-container{
+
+.img-container {
     max-width: 200px;
     margin-top: 16px;
 }
 
-.all-img-text{
+.all-img-text {
     font-size: 1.75rem;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
-.all-img-text-0{
+.all-img-text-0 {
     font-size: 1.5rem;
 }
 
-.all-img-text-1{
+.all-img-text-1 {
     color: #787885;
     font-size: .875rem;
     font-weight: bold;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: end;
     margin: 0 197px;
 }
-.main-btn{
+
+.main-btn {
     color: rgba(224, 44, 109, 0.87);
     font-size: 1rem;
     font-weight: bold;
@@ -162,10 +179,10 @@ header {
     border: none;
     background-color: white;
     position: relative;
-    
+
 }
 
-.featured-products{
+.featured-products {
     display: flex;
     justify-content: center;
     gap: 96px;
@@ -173,24 +190,24 @@ header {
     margin: 100px 0;
 }
 
-.product-text{
+.product-text {
     max-width: 610px;
 }
 
-.product-text-1{
+.product-text-1 {
     font-size: 2.375rem;
     font-weight: bold;
 
 }
 
-.product-text-2{
+.product-text-2 {
     color: #787885;
     font-size: 1rem;
     font-weight: bold;
     padding: 16px 0;
 }
 
-.last-btn{
+.last-btn {
     background-color: rgba(224, 44, 109, 0.87);
     font-size: 1rem;
     font-weight: bold;
@@ -200,7 +217,7 @@ header {
 }
 
 /* footer-part */
-footer{
+footer {
     background-color: rgb(10, 4, 25);
     height: 239px;
     display: flex;
@@ -209,29 +226,172 @@ footer{
     text-align: center;
 }
 
-.footer-text-1{
+.footer-text-1 {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.footer-text-2{
+.footer-text-2 {
     font-size: .875rem;
     font-weight: bold;
     color: rgba(217, 219, 225, 1);
     padding-bottom: 17px;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     gap: 16px;
     justify-content: center;
 
 }
-.icon{
+
+.icon {
     height: 32px;
     width: 32px;
     background-color: white;
-border-radius: 50%;
+    border-radius: 50%;
 }
 
+@media screen and (max-width:395px) {
+    header {
+        padding: 15px 20px 0px 20px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    .logo-name {
+        text-align: center;
+    }
+
+    .nav-bar-text>nav>ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .nav-bar-text>nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom: 0;
+    }
+
+    .banner-img {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 22px;
+    }
+
+    .banner-img>img {
+        height: 257px;
+        width: 257px;
+    }
+
+    .banner-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .banner-text-1 {
+        font-size: 1.75rem;
+    }
+
+    .banner-text-2 {
+        font-weight: 500;
+        font-size: .875rem;
+    }
+
+    .logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 5px 10px;
+        margin-bottom: 40px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logos>img {
+        width: 67px;
+        height: 18px;
+    }
+
+    .main-head {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0 16px;
+    }
+
+    .main-btn {
+        margin-top: 32px;
+        margin-bottom: 50px;
+    }
+
+    .featured-products {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin: 0 16px 50px;
+    }
+    .featured-products>div>img{
+        width: 299px;
+    }
+    .product-text{
+        text-align: center;
+    }
+    .product-text-1{
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    .product-text-2{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .footer-text-1 {
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .footer-text-2 {
+        font-size: .8rem;
+        font-weight: bold;
+        color: rgba(217, 219, 225, 1);
+        padding-bottom: 17px;
+        padding-top: 5px;
+    }
+    
+    .footer-icons {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+    
+    }
+    
+    .icon {
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
